@@ -15,7 +15,7 @@ module.exports = (app) => {
     req.logout();
     res.send(req.user);
   });
-  // route confirming current user
+  // route confirming current user˝
   app.get("/api/current_user", (req, res) => {
     res.send(req.user);
   });
