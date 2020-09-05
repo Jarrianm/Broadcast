@@ -10,6 +10,7 @@ mongoose.connect(keys.mongoURI);
 
 const app = express();
 //this funtion dictates how long the cookie assigned to a User will last
+
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,
