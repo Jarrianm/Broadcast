@@ -7,4 +7,4 @@ import{ createStore, applyMiddleware} from 'redux'
 
 const store = createStore(() => [], {}, applyMiddleware());
 
-ReactDom.render(<Provider store={store}></Provider> <App/><Provider/>, document.querySelector('#root'));
+ReactDom.render(<Provider store={store}> <App/></Provider>, document.querySelector('#root'));
