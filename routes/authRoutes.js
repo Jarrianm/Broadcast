@@ -9,8 +9,16 @@ module.exports = (app) => {
     })
   );
   //route to check the user is logged in correctly
-  app.get("/auth/google/callback", passport.authenticate("google"));
+  app.get(
+    "/auth/google/callback",
+    passport.authenticate("google"),
+    (req, res) => {
+      res.redirect('/surveys')
+    }
+  );
+
   //logout route
+
   app.get("/api/logout", (req, res) => {
     req.logout();
     res.send(req.user);
