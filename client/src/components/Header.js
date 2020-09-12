@@ -8,7 +8,7 @@ renderContent(){
       case false: 
       return <li><a href='/auth/google'> Login With Google </a></li>
         default:
-          return  <li><a > Logout </a></li>
+          return  <li className='tab'><a href='/api/logout'> Logout </a></li>
 
   }
 }
@@ -25,9 +25,7 @@ renderContent(){
           </div>
           <div className="nav-content">
             <ul className="tabs tabs-transparent">
-              {
-                this.renderContent()
-  }
+              {this.renderContent()}
             </ul>
           </div>
         </nav>
