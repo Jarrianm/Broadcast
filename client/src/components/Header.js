@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-
+import {connect} from 'react-redux'
 class Header extends Component {
+
+
   render() {
+    console.log(this.props)
     return (
       <div>
-        <nav className="nav-extended">
+        <nav className="nav-extended blue">
           <div className="nav-wrapper">
-            <a href="#" className="brand-logo">
+            <a  className="brand-logo">
               Focus Group
             </a>
           </div>
@@ -22,5 +25,9 @@ class Header extends Component {
     );
   }
 }
+function mapStateToProps(state){
+  return{auth: state.auth}
+}
 
-export default Header;
+
+export default connect(mapStateToProps) (Header);
