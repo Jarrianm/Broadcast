@@ -1,5 +1,5 @@
 # Broadcast-Email
-(Insert logo) 
+<img width="653" alt="Braodcast" src="https://user-images.githubusercontent.com/42524503/133537754-1e36dbed-f77c-42b0-9be4-d1ad82334062.png">
 
 
 # Motivation:
@@ -7,8 +7,6 @@ Ive spent a lot of time working with small businesses and one of he hardest metr
 
 This application was created with small businesses in mind. For owners to be able to Interact directly with their clients without doing any of the hard work. With the capability of sending one email to over 1000+ customers this application can change the way businesses interact with their clients.
 
-
-(Img or gif)
 
 
 
